@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: MQConsumer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8081
+
+
+rabbitmq:
+  exchange:
+    name: test.exchange
+  queue:
+    name: test.queue
+  routing:
+    key: test.routing.key
